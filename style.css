@@ -6,18 +6,58 @@
 
 :root {
   --primary-font-family: "Inter", sans-serif;
-  --secundary-font-faily: "IBM Plex Mono", monospace;
+  --secundary-font-family: "IBM Plex Mono", monospace;
 
   --background-primary-color: #0b0c0d;
   --background-secundary-color: #131416;
 
   --primary-text-color: #8b8d92;
   --secundary-text-color: #e9e9ea;
-  --terciary-text-color: #4c5762;
+  --tertiary-text-color: #4c5762;
 
   --auxiliar-color: #9fb2c2;
 }
 
 body {
   background-color: var(--background-primary-color);
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #232427;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: var(--secundary-text-color);
+  font-family: var(--primary-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 48px;
+}
+
+.navigation-menu ul {
+  display: flex;
+  gap: 40px;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-family: var(--secundary-font-family);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navigation-menu a span {
+  color: var(--tertiary-text-color);
+  font-size: 11px;
 }
