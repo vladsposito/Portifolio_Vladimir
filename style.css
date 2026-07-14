@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font-family: "Inter", sans-serif;
+  --secundary-font-faily: "IBM Plex Mono", monospace;
+
+  --background-primary-color: #0b0c0d;
+  --background-secundary-color: #131416;
+
+  --primary-text-color: #8b8d92;
+  --secundary-text-color: #e9e9ea;
+  --terciary-text-color: #4c5762;
+
+  --auxiliar-color: #9fb2c2;
+}
+
+body {
+  background-color: var(--background-primary-color);
+}
