@@ -73,7 +73,7 @@ header {
   align-items: center;
 }
 
-.introductory-pragraph {
+.intro {
   font-family: var(--secundary-font-family);
   font-size: 13px;
   color: var(--auxiliar-color);
@@ -106,18 +106,18 @@ header {
   color: var(--auxiliar-color);
 }
 
-.hero-section button {
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-buttons button {
   height: 47px;
   width: 152px;
   border-radius: 2px;
   cursor: pointer;
   font-size: 13px;
-}
-
-.hero-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
 }
 
 .talk-to-me-button {
@@ -143,12 +143,40 @@ header {
   .navigation-menu ul {
     gap: 20px;
   }
+
+  .hero {
+    margin: 80px 24px;
+  }
+
+  .hero-section {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .intro {
+    font-size: 12px;
+  }
+
+  .hero-section h1 {
+    font-size: 60px;
+  }
+
+  .subtittle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .hero-buttons button {
+    font-size: 15px;
+    height: 44px;
+    width: 140px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  header {
-    position: absolute;
-  }
   .navigation-menu ul {
     display: none;
     position: absolute;
@@ -180,6 +208,10 @@ header {
     max-width: 350px;
   }
 
+  .intro {
+    font-size: 11px;
+  }
+
   .hero-section h1 {
     font-size: 40px;
   }
@@ -192,7 +224,9 @@ header {
     font-size: 14px;
   }
 
-  .hero-section button {
+  .hero-buttons button {
+    height: 42px;
+    width: 130px;
     font-size: 14px;
   }
 }
