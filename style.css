@@ -49,6 +49,10 @@ header {
   list-style: none;
 }
 
+#menu-hamburguer {
+  display: none;
+}
+
 .navigation-menu a {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -60,4 +64,31 @@ header {
 .navigation-menu a span {
   color: var(--tertiary-text-color);
   font-size: 11px;
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    position: absolute;
+  }
+  .navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 10px;
+    background-color: var(--background-secundary-color);
+  }
+
+  .navigation-menu ul.active{
+    display: flex;
+  }
+
+  #menu-hamburguer {
+    display: block;
+    color: var(--secundary-text-color);
+    margin-right: 48px;
+  }
 }
