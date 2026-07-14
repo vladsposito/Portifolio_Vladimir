@@ -74,10 +74,21 @@ header {
 }
 
 .intro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--secundary-font-family);
   font-size: 13px;
   color: var(--auxiliar-color);
   margin-bottom: 20px;
+}
+
+.intro::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 1px;
+  background-color: var(--auxiliar-color);
 }
 
 .hero-section h1 {
@@ -121,7 +132,9 @@ header {
 }
 
 .talk-to-me-button {
-  border: 2px, solid, #232427;
+  border:
+    2px,
+    solid #232427;
   background-color: var(--background-primary-color);
   font-family: var(--primary-font-family);
   color: var(--secundary-text-color);
