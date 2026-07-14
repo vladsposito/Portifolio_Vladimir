@@ -17,3 +17,7 @@
 
   --auxiliar-color: #9fb2c2;
 }
+
+body {
+  background-color: var(--background-primary-color);
+}
