@@ -308,4 +308,35 @@ header {
     width: 130px;
     font-size: 14px;
   }
+
+  .background {
+    margin: 80px 24px;
+  }
+  .background-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .background-item {
+    padding-left: 24px;
+    margin-bottom: 30px;
+  }
+
+  .background-item::before {
+    left: -4px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .background-item h3 {
+    font-size: 16px;
+  }
+
+  .background-item p {
+    font-size: 13px;
+  }
+
+  #background-date {
+    font-size: 11px;
+  }
 }
