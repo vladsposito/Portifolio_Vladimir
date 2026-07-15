@@ -67,7 +67,7 @@ header {
 }
 
 .hero {
-  margin: 250px auto;
+  margin: 250px auto 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,6 +252,39 @@ header {
     font-size: 15px;
     height: 44px;
     width: 140px;
+  }
+
+  .background {
+    margin: 80px 24px;
+  }
+
+  .background-section {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .background-section h2 {
+    font-size: 34px;
+    margin-bottom: 36px;
+  }
+
+  .background-item {
+    padding-left: 30px;
+    margin-bottom: 36px;
+  }
+
+  .background-item::before {
+    left: -5px;
+    width: 11px;
+    height: 11px;
+  }
+
+  .background-item h3 {
+    font-size: 17px;
+  }
+
+  .background-item p {
+    font-size: 13px;
   }
 }
 
