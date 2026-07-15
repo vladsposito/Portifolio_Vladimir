@@ -353,6 +353,49 @@ header {
   .background-item p {
     font-size: 13px;
   }
+
+  .projects {
+    margin: 100px 24px;
+  }
+
+  .projects-section {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .project-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 300px;
+    height: auto;
+    padding: 24px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-description {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .tecnologies {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .tecnologies p {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .project-button {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 420px) {
