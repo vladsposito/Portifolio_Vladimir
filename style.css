@@ -163,8 +163,30 @@ header {
   margin-bottom: 48px;
 }
 
+.background-itens {
+  border-left: 2px solid #232427;
+}
+
 .background-item {
   margin-bottom: 48px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.background-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--auxiliar-color);
+  border-radius: 50%;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
 }
 
 #background-date {
