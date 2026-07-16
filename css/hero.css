@@ -1,8 +1,5 @@
 .hero {
-  margin: 250px auto 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 250px 0 400px;
 }
 
 .hero-section h1 {
