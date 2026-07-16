@@ -1,0 +1,79 @@
+header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #232427;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: block;
+  text-decoration: none;
+  color: var(--secundary-text-color);
+  font-family: var(--primary-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 48px;
+}
+
+.navigation-menu ul {
+  display: flex;
+  gap: 40px;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+#menu-hamburguer {
+  display: none;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-family: var(--secundary-font-family);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navigation-menu a span {
+  color: var(--tertiary-text-color);
+  font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu span {
+    display: none;
+  }
+
+  .navigation-menu ul {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    background-color: var(--background-secundary-color);
+  }
+
+  .navigation-menu ul.active {
+    display: flex;
+  }
+
+  #menu-hamburguer {
+    display: block;
+    color: var(--secundary-text-color);
+    margin-right: 48px;
+    background-color: transparent;
+    border: none;
+  }
+}

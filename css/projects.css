@@ -1,0 +1,171 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.project-card {
+  width: 318px;
+  height: 256px;
+  background-color: var(--background-secundary-color);
+  border: 1px solid #232427;
+  border-radius: 2px;
+  padding: 29px;
+}
+
+#project-intro {
+  font-family: var(--secundary-font-family);
+  font-size: 12px;
+  color: var(--auxiliar-color);
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  font-family: var(--primary-font-family);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--secundary-text-color);
+  margin-bottom: 13px;
+}
+
+#project-description {
+  font-family: var(--primary-font-family);
+  font-size: 14px;
+  color: var(--primary-text-color);
+  margin-bottom: 14px;
+}
+
+.tecnologies {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  font-family: var(--secundary-font-family);
+  font-size: 11px;
+  color: var(--primary-text-color);
+  margin-bottom: 25px;
+}
+
+.tecnologies p {
+  border: 2px solid #232427;
+  border-radius: 2px;
+  padding: 3px 9px;
+}
+
+#project-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-family: var(--secundary-font-family);
+  font-size: 13px;
+  color: var(--auxiliar-color);
+}
+
+#project-button::after {
+  content: "arrow_forward";
+  font-family: "Material Symbols Outlined";
+  font-size: 13px;
+}
+
+@media screen and (max-wdith: 768px) {
+  .projects {
+    margin: 100px 24px;
+  }
+
+  .projects-section {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .project-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 300px;
+    height: auto;
+    padding: 24px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-description {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .tecnologies {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .tecnologies p {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .project-button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .projects {
+    margin: 80px 24px;
+  }
+
+  .projects-section {
+    width: 100%;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 20px;
+  }
+
+  #project-intro {
+    font-size: 11px;
+  }
+
+  .project-card h3 {
+    font-size: 17px;
+  }
+
+  #project-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .tecnologies {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .tecnologies p {
+    font-size: 10px;
+    padding: 3px 7px;
+  }
+
+  #project-button {
+    font-size: 12px;
+  }
+}
