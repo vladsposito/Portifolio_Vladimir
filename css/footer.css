@@ -26,3 +26,24 @@
   font-family: "Material Symbols Outlined";
   font-size: 11px;
 }
+
+@media screen and (max-width: 420px) {
+  .footer-section {
+    align-items: center;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .footer-section p {
+    font-size: 11px;
+  }
+
+  #footer-rool {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  #footer-rool::after {
+    font-size: 10px;
+  }
+}
