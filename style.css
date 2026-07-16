@@ -275,10 +275,19 @@ header {
 }
 
 #project-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   text-decoration: none;
   font-family: var(--secundary-font-family);
   font-size: 13px;
   color: var(--auxiliar-color);
+}
+
+#project-button::after {
+  content: "arrow_forward";
+  font-family: "Material Symbols Outlined";
+  font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {
@@ -419,6 +428,8 @@ header {
     display: block;
     color: var(--secundary-text-color);
     margin-right: 48px;
+    background-color: transparent;
+    border: none;
   }
 
   .hero {
