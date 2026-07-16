@@ -47,3 +47,22 @@
     font-size: 10px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    max-width: 700px;
+    padding: 28px 24px;
+  }
+
+  .footer-section p {
+    font-size: 11px;
+  }
+
+  #footer-rool {
+    gap: 6px;
+  }
+
+  #footer-rool::after {
+    font-size: 10px;
+  }
+}
