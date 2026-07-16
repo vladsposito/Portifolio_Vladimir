@@ -1,8 +1,4 @@
 .contact {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
   margin-bottom: 300px;
 }
 
@@ -61,30 +57,28 @@
 }
 
 @media screen and (max-width: 420px) {
-  @media screen and (max-width: 420px) {
-    .contact {
-      margin: 80px 24px;
-    }
+  .contact {
+    margin: 80px 24px;
+  }
 
-    .contact-section {
-      width: 100%;
-    }
+  .contact-section {
+    width: 100%;
+  }
 
-    #contact-description {
-      font-size: 14px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
+  #contact-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 
-    .contact-card {
-      flex-direction: column;
-      gap: 6px;
-      align-items: flex-start;
-      padding: 12px 0;
-    }
+  .contact-card {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
 
-    .contact-card p {
-      font-size: 13px;
-    }
+  .contact-card p {
+    font-size: 13px;
   }
 }

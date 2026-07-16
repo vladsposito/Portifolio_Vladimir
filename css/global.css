@@ -22,6 +22,13 @@ body {
   background-color: var(--background-primary-color);
 }
 
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 #intro {
   display: flex;
   align-items: center;
