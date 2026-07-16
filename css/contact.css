@@ -34,3 +34,28 @@
   font-size: 14px;
   color: var(--primary-text-color);
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: 100px 24px;
+  }
+
+  .contact-section {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  #contact-description {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .contact-card {
+    padding: 12px 0;
+  }
+
+  .contact-card p {
+    font-size: 13px;
+  }
+}
+
