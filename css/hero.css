@@ -1,5 +1,6 @@
 .hero {
-  margin: 250px 0 400px;
+  margin: 150px 0 300px;
+  scroll-margin-top: 300px;
 }
 
 .hero-section h1 {
@@ -10,21 +11,21 @@
   margin-bottom: 24px;
 }
 
-.subtittle {
+#hero-subtittle {
   font-family: var(--secundary-font-family);
   font-size: 18px;
   color: var(--primary-text-color);
   margin-bottom: 33px;
 }
 
-.description {
+#hero-description {
   font-family: var(--secundary-font-family);
   font-size: 16px;
   color: var(--primary-text-color);
   margin-bottom: 40px;
 }
 
-.subtittle span {
+#hero-subtittle span {
   color: var(--auxiliar-color);
 }
 
@@ -42,7 +43,7 @@
   font-size: 13px;
 }
 
-.talk-to-me-button {
+#talk-to-me-button {
   border:
     2px,
     solid var(--border-color);
@@ -51,7 +52,7 @@
   color: var(--secundary-text-color);
 }
 
-.projects-button {
+#projects-button {
   border: none;
   background-color: var(--auxiliar-color);
   font-family: var(--secundary-font-family);
@@ -59,7 +60,7 @@
   font-weight: 600;
 }
 
-.projects-button:hover {
+#projects-button:hover {
   background-color: #b6c6d3;
   border: 1px solid var(--auxiliar-color);
 }
