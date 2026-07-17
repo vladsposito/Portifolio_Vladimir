@@ -6,6 +6,8 @@ const navigationItem = document.querySelectorAll(".navigation-item")
 
 const sections = document.querySelectorAll("section")
 
+const footerScroll = document.querySelector("#footer-scroll")
+
 //Menu Hamburguer
 menuHamburguer.addEventListener("click", ()=>{
     navigationList.classList.toggle("active")
@@ -37,6 +39,11 @@ navigationItem.forEach((element) => {
     scroll(2, 2)
     scroll(3, 3)
 
+    footerScroll.addEventListener("click", ()=>{
+        sections[0].scrollIntoView({
+            behavior: "smooth"
+        })
+    })
 
 //Obersrver
 const observer = new IntersectionObserver((entries) =>{ //entries é o array que recebe os elementos "olhados" pelo observer

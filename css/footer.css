@@ -14,41 +14,20 @@
   color: var(--primary-text-color);
 }
 
-#footer-rool {
+#footer-scroll {
   display: flex;
   gap: 7px;
   cursor: pointer;
 }
 
-#footer-rool::after {
+#footer-scroll::after {
   content: "arrow_upward";
   font-family: "Material Symbols Outlined";
   font-size: 11px;
 }
 
-#footer-rool:hover {
+#footer-scroll:hover {
   color: var(--auxiliar-color);
-}
-
-@media screen and (max-width: 420px) {
-  .footer-section {
-    align-items: center;
-    padding: 24px;
-    text-align: center;
-  }
-
-  .footer-section p {
-    font-size: 11px;
-  }
-
-  #footer-rool {
-    justify-content: center;
-    gap: 6px;
-  }
-
-  #footer-rool::after {
-    font-size: 10px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -61,11 +40,17 @@
     font-size: 11px;
   }
 
-  #footer-rool {
+  #footer-scroll {
     gap: 6px;
   }
 
-  #footer-rool::after {
+  #footer-scroll::after {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer-section {
+    padding: 24px;
   }
 }
