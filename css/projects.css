@@ -73,12 +73,7 @@
 
 @media screen and (max-width: 768px) {
   .projects {
-    margin: 100px 24px;
-  }
-
-  .projects-section {
-    width: 100%;
-    max-width: 700px;
+    margin: 100px 0;
   }
 
   .project-cards {
@@ -119,11 +114,7 @@
 
 @media screen and (max-width: 420px) {
   .projects {
-    margin: 80px 24px;
-  }
-
-  .projects-section {
-    width: 100%;
+    margin: 80px 0;
   }
 
   .project-cards {
