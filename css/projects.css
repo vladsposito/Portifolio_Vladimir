@@ -17,6 +17,10 @@
   padding: 29px;
 }
 
+.project-card:hover {
+  border-color: var(--tertiary-text-color);
+}
+
 #project-intro {
   font-family: var(--secundary-font-family);
   font-size: 12px;

@@ -59,6 +59,11 @@
   font-weight: 600;
 }
 
+.projects-button:hover {
+  background-color: #b6c6d3;
+  border: 1px solid var(--auxiliar-color);
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     margin: 80px 0;

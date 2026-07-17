@@ -37,6 +37,10 @@ header {
   font-weight: 400;
 }
 
+.navigation-menu a:hover {
+  color: var(--secundary-text-color);
+}
+
 .navigation-menu a span {
   color: var(--tertiary-text-color);
   font-size: 11px;
