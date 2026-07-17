@@ -7,6 +7,8 @@ const navigationItem = document.querySelectorAll(".navigation-item")
 const sections = document.querySelectorAll("section")
 
 const footerScroll = document.querySelector("#footer-scroll")
+const heroProjectButton = document.querySelector("#projects-button")
+const heroTalkToMeButton = document.querySelector("#talk-to-me-button")
 
 //Menu Hamburguer
 menuHamburguer.addEventListener("click", ()=>{
@@ -41,6 +43,18 @@ navigationItem.forEach((element) => {
 
     footerScroll.addEventListener("click", ()=>{
         sections[0].scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+
+        heroProjectButton.addEventListener("click", ()=>{
+        sections[2].scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+
+    heroTalkToMeButton.addEventListener("click", ()=>{
+        sections[3].scrollIntoView({
             behavior: "smooth"
         })
     })
