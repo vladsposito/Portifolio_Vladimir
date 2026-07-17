@@ -61,10 +61,17 @@ body {
   #intro {
     font-size: 12px;
   }
+
+  .container {
+    padding: 0 24px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   #intro {
     font-size: 11px;
+  }
+  .container {
+    padding: 0 20px;
   }
 }

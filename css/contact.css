@@ -34,12 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .contact {
-    margin: 100px 24px;
-  }
-
-  .contact-section {
-    width: 100%;
-    max-width: 700px;
+    margin: 100px 0;
   }
 
   #contact-description {
@@ -58,11 +53,7 @@
 
 @media screen and (max-width: 420px) {
   .contact {
-    margin: 80px 24px;
-  }
-
-  .contact-section {
-    width: 100%;
+    margin: 80px 0;
   }
 
   #contact-description {
