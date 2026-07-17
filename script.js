@@ -4,12 +4,17 @@ const navigationList = document.querySelector(".navigation-menu ul")
 
 const navigationItem = document.querySelectorAll(".navigation-item")
 
+//Menu Hamburguer
 menuHamburguer.addEventListener("click", ()=>{
     navigationList.classList.toggle("active")
 })
 
+//Navigation Menu Border
 navigationItem.forEach(element => {
     element.addEventListener("click", ()=>{
-        element.classList.toggle("active")
+        navigationItem.forEach(element => {
+            element.classList.remove("active")
+        });
+        element.classList.add("active")
     })
 });

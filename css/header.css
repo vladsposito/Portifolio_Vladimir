@@ -40,6 +40,7 @@ header {
 .navigation-item.active {
   border-bottom: 1px solid var(--auxiliar-color);
   padding-bottom: 3px;
+  color: var(--secundary-text-color);
 }
 
 .navigation-item:hover {
