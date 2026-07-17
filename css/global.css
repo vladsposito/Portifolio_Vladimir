@@ -24,6 +24,10 @@ body {
   background-color: var(--background-primary-color);
 }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 .container {
   width: 100%;
   max-width: 1000px;
