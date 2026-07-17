@@ -29,7 +29,7 @@ header {
   display: none;
 }
 
-.navigation-menu a {
+.navigation-item {
   text-decoration: none;
   color: var(--primary-text-color);
   font-family: var(--secundary-font-family);
@@ -37,17 +37,22 @@ header {
   font-weight: 400;
 }
 
-.navigation-menu a:hover {
+.navigation-item.active {
+  border-bottom: 1px solid var(--auxiliar-color);
+  padding-bottom: 3px;
+}
+
+.navigation-item:hover {
   color: var(--secundary-text-color);
 }
 
-.navigation-menu a span {
+.navigation-item span {
   color: var(--tertiary-text-color);
   font-size: 11px;
 }
 
 @media screen and (max-width: 768px) {
-  .navigation-menu span {
+  .navigation-item span {
     display: none;
   }
 
