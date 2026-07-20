@@ -18,8 +18,8 @@ menuHamburguer.addEventListener("click", ()=>{
 
 //Navigation Menu Border
 navigationItem.forEach((element) => { 
-    element.addEventListener("click", ()=>{
-        event.preventDefault()
+    element.addEventListener("click", (event)=>{
+        event.preventDefault(event)
         navigationItem.forEach(element => {
             element.classList.remove("active")
         });
@@ -60,13 +60,12 @@ navigationItem.forEach((element) => {
     })
 
 //Obersrver
-const observer = new IntersectionObserver((entries) =>{ //entries é o array que recebe os elementos "olhados" pelo observer
+const observer = new IntersectionObserver((entries) => { //entries é o array que recebe os elementos "olhados" pelo observer
     entries.forEach(entry => { //entry representa cada objeto do entries
         if(entry.isIntersecting){ //isIntersecting é um boolean para dizer se o objeto esta sendo visto na tela
             navigationItem.forEach(element => {
                 element.classList.remove("active") 
                 //retirando os active antigos para entrar os novos
-                
             });
 
             const index = [...sections].indexOf(entry.target)
@@ -75,10 +74,10 @@ const observer = new IntersectionObserver((entries) =>{ //entries é o array que
 
             navigationItem[index].classList.add("active")
         }
-        
-       
     });
-     threshold: 0.5
+
+}, {
+    threshold: 0.6
 })
 
 sections.forEach(sections => observer.observe(sections));
